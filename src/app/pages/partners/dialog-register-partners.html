@@ -1,0 +1,26 @@
+<h2 mat-dialog-title>Olá</h2>
+<mat-dialog-content>
+  <p>Criar parceiro</p>
+  <mat-form-field>
+    <mat-label>Nome</mat-label>
+    <input matInput [(ngModel)]="name" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Descrição</mat-label>
+    <input matInput [(ngModel)]="description" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Repositório</mat-label>
+    <input matInput [(ngModel)]="repositoryGit" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Url</mat-label>
+    <input matInput [(ngModel)]="urlDoc" />
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button>Cancelar</button>
+  <button mat-button [mat-dialog-close]="" cdkFocusInitial (click)="register()">
+    Cadastrar
+  </button>
+</mat-dialog-actions>
